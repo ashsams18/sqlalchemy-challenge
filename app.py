@@ -6,7 +6,7 @@ from sqlalchemy import create_engine, func
 import numpy as np
 import datetime as dt
 
-engine = create_engine("sqlite:///./Resources/hawaii.sqlite", echo=False)
+engine = create_engine("sqlite:///Resources/hawaii.sqlite", echo=False)
 Base = automap_base()
 Base.prepare(engine, reflect=True)
 Base.classes.keys()
